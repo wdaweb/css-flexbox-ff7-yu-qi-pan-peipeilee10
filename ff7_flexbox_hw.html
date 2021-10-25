@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .container {
+            width: 75%;
+            height: 80%;
+            background: url(./bg-full.jpg) no-repeat center center/cover;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            width: 80%;
+            height: 70%;
+            border: 1px solid rgb(165, 164, 164);
+            display: flex;
+        }
+        
+        .col-1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        
+        .col-1 .row-1 {
+            width: 100%;
+            height: 100%;
+            background: url(./main.jpg) no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .col-1 .row-1 img {
+            width: 30%;
+        }
+        
+        .col-1 .row-1 .img-container {
+            text-align: center;
+        }
+        
+        .col-1 .row-1 p {
+            align-self: center;
+            flex-basis: auto;
+            width: 80%;
+            text-align: center;
+            font-size: 1rem;
+            padding-bottom: 5%;
+        }
+        
+        .col-2 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 1;
+        }
+        
+        .col-2 .row-2 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .col-2 .row-2 .cloud {
+            justify-content: flex-start;
+            height: 50%;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cloud img {
+            height: 100%;
+            order: 2;
+        }
+        
+        .cloud .text {
+            justify-content: center;
+            order: 1;
+            margin-left: 20px;
+        }
+        
+        .col-2 .row-2 .tifa {
+            justify-content: flex-end;
+            height: 50%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .tifa img {
+            height: 100%;
+        }
+        
+        .tifa .text {
+            color: white;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="col-1">
+                <div class="row-1">
+                    <div class="img-container">
+                        <img src="./ps4-ff7.png">
+                    </div>
+                    <h1>AVAILABLE NOW</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam libero minus soluta quisquam ea dolorum atque velit a Eos, quisquam adipisicing elit. Ullam
+                    </p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="row-2">
+                    <div class="cloud">
+                        <img src="cloud.png">
+                        <div class="text">
+                            <h1>Cloud</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est quibusdam aspernatur ab, repellat dolorem quo corporis enim mollitia earum </p>
+                        </div>
+                    </div>
+                    <div class="tifa">
+                        <img src="tifa.png">
+                        <div class="text">
+                            <h1>Tifa</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta repellendus ducimus consequatur dicta? Magni error molestiae ab iste </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
